@@ -22,8 +22,8 @@ export const TestimonialSectionView = ({}: ReturnType<
           facere impedit minus animi obcaecati eligendi sint alias ducimus in!
         </p>
         <div className="testimonials-stars-container">
-          {[0, 1, 2, 3, 4].map(() => {
-            return <AiFillStar />;
+          {[0, 1, 2, 3, 4].map((_, index) => {
+            return <AiFillStar key={`star_${index}`} />;
           })}
         </div>
         <h2>John Doe</h2>
